@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".SingleActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardElevation="12dp"
+           app:cardCornerRadius="15dp"
+           android:padding="16dp"
+           android:layout_margin="10dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:padding="18dp">
+               <ImageView
+                   android:id="@+id/roomImage"
+                   android:layout_width="match_parent"
+                   android:layout_height="400dp"
+                   android:src="@drawable/conference1"
+                   android:scaleType="centerCrop"/>
+
+               <TextView
+                   android:id="@+id/roomName"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Room Name"
+                   android:textAlignment="center"
+                   android:textSize="36sp"
+                   android:textStyle="bold"
+                   tools:ignore="MissingConstraints" />
+
+               <TextView
+                   android:id="@+id/roomDesc"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Room Description"
+                   android:textAlignment="center"
+                   android:textSize="18sp"
+                   tools:ignore="MissingConstraints"/>
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:hint="Enter Phone"
+                   android:layout_marginTop="30dp"
+                   android:textColor="@color/black"
+                   android:textColorHint="@color/black"
+                   android:padding="8dp"
+                   android:background="@drawable/custom_edit"
+                   android:drawableLeft="@drawable/phone_icon"
+                   android:drawablePadding="8dp"/>
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:hint="Enter Amount"
+                   android:layout_marginTop="30dp"
+                   android:textColor="@color/black"
+                   android:textColorHint="@color/black"
+                   android:padding="8dp"
+                   android:background="@drawable/custom_edit"
+                   android:drawableLeft="@drawable/ic_money"
+                   android:drawablePadding="8dp"/>
+
+               <Button
+                   android:id="@+id/bookButton"
+                   android:layout_width="match_parent"
+                   android:layout_height="55dp"
+                   android:text="Book now"
+                   android:textSize="18sp"
+                   android:layout_marginTop="15dp"
+                   android:background="@drawable/custom_button"/>
+
+               <TextView
+                   android:id="@+id/otherRooms"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="8dp"
+                   android:text="Checkout Other Conferences"
+                   android:textSize="14sp"
+                   android:textAlignment="center"
+                   android:textColor="@color/purple_500"
+                   android:layout_marginBottom="20dp"/>
+           </LinearLayout>
+
+           >
+
+
+       </androidx.cardview.widget.CardView>
+
+   </ScrollView>
+
+</LinearLayout>
